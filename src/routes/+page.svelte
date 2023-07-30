@@ -17,9 +17,3 @@
 <div class="avoidBreak">
 	<ArtifactsOfPower />
 </div>
-
-<style>
-	.avoidBreak {
-		page-break-inside: avoid;
-	}
-</style>

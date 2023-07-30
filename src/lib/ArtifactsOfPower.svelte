@@ -43,7 +43,7 @@
 </script>
 
 <div class:noPrint={selectedPacks.length === 0}>
-	<div class="headerWrapper">
+	<div class="fourColumnHeaderWrapper">
 		<div class="fullWidth">
 			<h1>Artifacts of Power</h1>
 		</div>
@@ -63,6 +63,7 @@
 				</label>
 			</div>
 		{/each}
+
 		<div class="fullWidth noPrint">
 			<h2>Subfactions</h2>
 		</div>
@@ -81,7 +82,7 @@
 			{/each}
 		{/each}
 	</div>
-	<div class="contentWrapper">
+	<div class="twoColumnContentWrapper">
 		{#each artifactsOfPower as artifact}
 			<div
 				class:invisible={!(
@@ -94,59 +95,3 @@
 		{/each}
 	</div>
 </div>
-
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sigmar+One&display=swap');
-
-	h1 {
-		font-family: 'Sigmar One', cursive;
-		margin: 2px;
-	}
-
-	h2 {
-		font-family: 'Sigmar One', cursive;
-		size: smaller;
-		margin: 2px;
-	}
-
-	@media print {
-		.noPrint {
-			display: none;
-		}
-
-		h1 {
-			font-size: small;
-		}
-
-		.contentWrapper {
-			font-size: 8pt;
-		}
-	}
-
-	.headerWrapper {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		padding: 5px;
-		background-color: darkslategrey;
-		color: ivory;
-		-webkit-print-color-adjust: exact !important;
-		print-color-adjust: exact !important;
-	}
-
-	.contentWrapper {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		padding: 20px;
-		/* grid-auto-rows: 1fr; */
-		gap: 10px;
-	}
-
-	.fullWidth {
-		justify-self: center;
-		grid-column: 1 / -1;
-	}
-
-	.invisible {
-		display: none;
-	}
-</style>
