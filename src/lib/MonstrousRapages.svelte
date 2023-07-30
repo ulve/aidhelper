@@ -29,7 +29,8 @@
 			{#if selectedPacks.includes(rampage.pack)}
 				<div class="item">
 					<div>
-						<b>{rampage.name}:</b>{rampage.text}
+						<b>{rampage.name}:</b>
+						{rampage.text}
 					</div>
 					{#if includePacks}
 						<div class="pack">

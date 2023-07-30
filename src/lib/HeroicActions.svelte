@@ -28,7 +28,8 @@
 			{#if selectedPacks.includes(action.pack)}
 				<div class="item">
 					<div>
-						<b>{action.name}:</b>{action.text}
+						<b>{action.name}:</b>
+						{action.text}
 					</div>
 					{#if includePacks}
 						<div class="pack">

@@ -88,7 +88,8 @@
 			{#if selectedPacks.includes(artifact.pack) && (selectedSubfactions.includes(artifact.subfaction) || artifact.subfaction === 'All')}
 				<div class="item">
 					<div>
-						<b>{artifact.name}:</b>{artifact.text}
+						<b>{artifact.name}:</b>
+						{artifact.text}
 					</div>
 					{#if includePacks}
 						<div class="pack">

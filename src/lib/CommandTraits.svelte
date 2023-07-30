@@ -88,7 +88,8 @@
 			{#if selectedPacks.includes(trait.pack) && (selectedSubfactions.includes(trait.subfaction) || trait.subfaction === 'All')}
 				<div class="item">
 					<div>
-						<b>{trait.name}:</b>{trait.text}
+						<b>{trait.name}:</b>
+						{trait.text}
 					</div>
 
 					{#if includePacks}

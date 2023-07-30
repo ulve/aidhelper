@@ -29,7 +29,8 @@
 				<div><div class="box" /></div>
 				<div class="item">
 					<div>
-						<b>{strategy.name}:</b>{strategy.text}
+						<b>{strategy.name}:</b>
+						{strategy.text}
 					</div>
 					{#if includePacks}
 						<div class="pack">
