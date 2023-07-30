@@ -47,21 +47,28 @@
 		<div class="fullWidth">
 			<h1>Artifacts of Power</h1>
 		</div>
-		<div class="noPrint">
-			{#each distinctPacks as pack}
-				<div>
-					<label>
-						<input
-							type="checkbox"
-							checked={selectedPacks.includes(pack)}
-							value={pack}
-							on:change={handlePack}
-						/>{pack}
-					</label>
-				</div>
-			{/each}
-			{#each selectedPacks as pack}
-				{#each GetSubfactionsForPack(pack) as subfaction}
+
+		<div class="fullWidth noPrint">
+			<h2>Packs</h2>
+		</div>
+		{#each distinctPacks as pack}
+			<div class="noPrint">
+				<label>
+					<input
+						type="checkbox"
+						checked={selectedPacks.includes(pack)}
+						value={pack}
+						on:change={handlePack}
+					/>{pack}
+				</label>
+			</div>
+		{/each}
+		<div class="fullWidth noPrint">
+			<h2>Subfactions</h2>
+		</div>
+		{#each selectedPacks as pack}
+			{#each GetSubfactionsForPack(pack) as subfaction}
+				<div class="noPrint">
 					<label>
 						<input
 							type="checkbox"
@@ -70,9 +77,9 @@
 							on:change={handleSubfaction}
 						/>{subfaction}
 					</label>
-				{/each}
+				</div>
 			{/each}
-		</div>
+		{/each}
 	</div>
 	<div class="contentWrapper">
 		{#each artifactsOfPower as artifact}
@@ -90,8 +97,15 @@
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sigmar+One&display=swap');
+
 	h1 {
 		font-family: 'Sigmar One', cursive;
+		margin: 2px;
+	}
+
+	h2 {
+		font-family: 'Sigmar One', cursive;
+		size: smaller;
 		margin: 2px;
 	}
 
@@ -99,6 +113,7 @@
 		.noPrint {
 			display: none;
 		}
+
 		h1 {
 			font-size: small;
 		}

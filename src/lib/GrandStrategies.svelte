@@ -13,6 +13,9 @@
 		<div class="fullWidth">
 			<h1>Grand Strategies</h1>
 		</div>
+		<div class="fullWidth noPrint">
+			<h2>Packs</h2>
+		</div>
 		<div class="noPrint">
 			{#each distinctPacks as pack}
 				<label><input type="checkbox" bind:group={selectedPacks} value={pack} />{pack} </label>
@@ -31,8 +34,15 @@
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sigmar+One&display=swap');
+
 	h1 {
 		font-family: 'Sigmar One', cursive;
+		margin: 2px;
+	}
+
+	h2 {
+		font-family: 'Sigmar One', cursive;
+		size: smaller;
 		margin: 2px;
 	}
 
@@ -40,6 +50,7 @@
 		.noPrint {
 			display: none;
 		}
+
 		h1 {
 			font-size: small;
 		}
@@ -49,12 +60,6 @@
 		}
 	}
 
-	.box {
-		border: 2px solid black;
-		width: 15px;
-		height: 15px;
-		margin: 5px;
-	}
 	.headerWrapper {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
@@ -67,9 +72,9 @@
 
 	.contentWrapper {
 		display: grid;
-		grid-template-columns: auto 1fr auto 1fr;
-		/* grid-auto-rows: 1fr; */
+		grid-template-columns: 1fr 1fr;
 		padding: 20px;
+		/* grid-auto-rows: 1fr; */
 		gap: 10px;
 	}
 
