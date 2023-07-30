@@ -1,4 +1,63 @@
+export const monstrousRampages = [
+  {
+    pack: "Gloomspite Gitz",
+    faction: "Gloomspite Gitz",
+    subfaction: "All",
+    name: "Ensnaring Webbing",
+    text: 'Only an ARACHNAROK unit can carry out this monstrous rampage. Pick 1 enemy HERO within 3" of this ARACHNAROK unit that is not a MONSTER and roll a dice. If the score equals or exceeds that HERO’s Wounds characteristic, that hero cannot fight in the following combat phase.'
+  },
+  {
+    pack: "Gloomspite Gitz",
+    faction: "Gloomspite Gitz",
+    subfaction: "All",
+    name: "Giant Boing!",
+    text: 'Only a MANGLER SQUIGS unit that has made a charge move this turn can carry out this monstrous rampage. This MANGLER SQUIGS unit can make a 3D6" move but it must finish that move within 3" of any enemy units.'
+  },
+  {
+    pack: "Core Book",
+    faction: "All",
+    subfaction: "All",
+    name: "Roar",
+    text: 'Pick 1 enemy unit within 3" of this model and roll a dice. On a 3+, that unit cannot issue or receive commands in the following combat phase.'
+  },
+  {
+    pack: "Core Book",
+    faction: "All",
+    subfaction: "All",
+    name: "Stomp",
+    text: 'Pick 1 enemy unit within 3" of this model that is not a MONSTER and roll a dice. On a 2+, that unit suffers D3 mortal wounds.'
+  },
+  {
+    pack: "Core Book",
+    faction: "All",
+    subfaction: "All",
+    name: "Titanic Duel",
+    text: 'Pick 1 enemy MONSTER within 3" of this model. Add 1 to hit rolls for attacks made by this model that target that enemy MONSTER until the end of the following combat phase.'
+  },
+  {
+    pack: "Core Book",
+    faction: "All",
+    subfaction: "All",
+    name: "Smash To Rubble",
+    text: 'Pick 1 faction terrain feature or defensible terrain feature within 3" of this model and roll a dice. On a 3+, the terrain feature is demolished if it was defensible (see 17.2.3), and the scenery rules on its warscroll cannot be used for the rest of the battle if it was a faction terrain feature.'
+  }
+].sort((a, b) => a.pack.localeCompare(b.pack) || a.subfaction.localeCompare(b.subfaction) || a.name.localeCompare(b.name))
+
 export const heroicActions = [
+  {
+    pack: "Glomepite Gitz",
+    faction: "Gloomspite Gitz",
+    subfaction: "All",
+    name: "Beckon the Loonatic Hordes",
+    text: 'Only a MOONCLAN HERO affected by the Light of the Bad Moon can carry out this heroic action. This HERO can immediately issue the Rally command up to 3 times without any command points being spent. Each unit that receives the command must be a different'
+  },
+  {
+    pack: "Glomepite Gitz",
+    faction: "Gloomspite Gitz",
+    subfaction: "All",
+    name: "Wade and Smash",
+    text: 'Only a DANKHOLD TROGGBOSS within 3" of any enemy units can carry out this heroic action. This DANKHOLD TROGGBOSS can make a 6" move but must finish the move within 3" of any enemy units. At the end of that move, roll a dice for each enemy unit within 1" of this DANKHOLD TROGGBOSS. On a 2+, that unit suffers D3 mortal wounds.'
+  },
   {
     pack: "Core Book",
     faction: "All",
@@ -27,7 +86,7 @@ export const heroicActions = [
     name: "Thier Finest Hour",
     text: 'Pick 1 friendly h ero. Add 1 to wound rolls for attacks made by that hero until the end of that turn, and add 1 to save rolls for attacks that target that h ero until the end of that turn. You cannot carry out this heroic action with the same hero more than once in the same battle'
   }
-]
+].sort((a, b) => a.pack.localeCompare(b.pack) || a.subfaction.localeCompare(b.subfaction) || a.name.localeCompare(b.name))
 
 export const commandTraits = [
   {
@@ -149,7 +208,7 @@ export const commandTraits = [
     name: "Master of the Celestial Menagerie",
     text: 'If this general has the Behemoth battlefield role and is on the battlefield, subtract 1 from wound rolls for attacks made with melee weapons that target friendly STORMCAST ETERNALS units that have the Behemoth battlefield role.'
   },
-]
+].sort((a, b) => a.pack.localeCompare(b.pack) || a.subfaction.localeCompare(b.subfaction) || a.name.localeCompare(b.name))
 
 export const artifactsOfPower = [
   {
@@ -330,7 +389,7 @@ export const artifactsOfPower = [
     name: "Pet Gribbly",
     text: 'Add 1 to the bearer’s Wounds characteristic. In addition, each time a wound is allocated to the bearer and not negated, roll a dice. On a 1, the Pet Gribbly is squished. When the Pet Gribbly is squished, the bearer becomes enraged for the rest of the battle. Add 1 to hit rolls and wound rolls for attacks made by the bearer while they are enraged.'
   }
-]
+].sort((a, b) => a.pack.localeCompare(b.pack) || a.subfaction.localeCompare(b.subfaction) || a.name.localeCompare(b.name))
 
 export const grandStrategies = [
   {
@@ -388,7 +447,7 @@ export const grandStrategies = [
     name: "Superior Spell-flinger",
     text: "When the battle ends, you complete this grand strategy if there are 2 or more friendly Gloomspite Gitz endless spells on the battlefield.",
   },
-]
+].sort((a, b) => a.pack.localeCompare(b.pack) || a.name.localeCompare(b.name))
 
 export const battleTactics = [
   {
@@ -499,4 +558,4 @@ export const battleTactics = [
     name: "You Ain’t So Big",
     text: "Pick 1 enemy MONSTER on the battlefield. You complete this tactic if that MONSTER was slain by an attack made by a friendly GLOOMSPITE GITZ TROGGOTH unit during this turn."
   }
-]
+].sort((a, b) => a.pack.localeCompare(b.pack)) || a.subfaction.localeCompare(b.subfaction) || a.name.localeCompare(b.name)

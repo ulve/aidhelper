@@ -4,8 +4,12 @@
 	import CommandTraits from '$lib/CommandTraits.svelte';
 	import GrandStrategies from '$lib/GrandStrategies.svelte';
 	import HeroicActions from '$lib/HeroicActions.svelte';
+	import MonstrousRapages from '$lib/MonstrousRapages.svelte';
 </script>
 
+<div class="avoidBreak">
+	<MonstrousRapages />
+</div>
 <div class="avoidBreak">
 	<HeroicActions />
 </div>

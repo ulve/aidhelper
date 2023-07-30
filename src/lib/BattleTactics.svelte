@@ -16,11 +16,11 @@
 		<div class="fullWidth noPrint">
 			<h2>Packs</h2>
 		</div>
-		<div class="noPrint">
-			{#each distinctPacks as pack}
+		{#each distinctPacks as pack}
+			<div class="noPrint">
 				<label><input type="checkbox" bind:group={selectedPacks} value={pack} />{pack} </label>
-			{/each}
-		</div>
+			</div>
+		{/each}
 	</div>
 	<div class="fourColumnContentWrapper">
 		{#each battleTactics as strategy}
