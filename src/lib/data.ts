@@ -1,3 +1,62 @@
+export const battleTraits = [
+  {
+    pack: "Gloomspite Gitz",
+    faction: "Gloomspite Gitz ",
+    subfaction: "All",
+    name: "Frothing Zealots",
+    text: 'If a friendly MOONCLAN unit receives the rally command while it is affected by the Light of the Bad Moon, you can return 1 slain model to the unit that receives the command for each 4+ instead of each 6.'
+  },
+  {
+    pack: "Gloomspite Gitz",
+    faction: "Gloomspite Gitz",
+    subfaction: "All",
+    name: "Lunar Squigs",
+    text: 'While GLOOMSPITE GITZ SQUIG units are affected by the Light of the Bad Moon they can attempt a charge even if they ran in the same turn.'
+  },
+  {
+    pack: "Gloomspite Gitz",
+    faction: "Gloomspite Gitz",
+    subfaction: "All",
+    name: "Moonlit Hide",
+    text: 'Add 1 to save rolls for attacks that target GLOOMSPITE GITZ TROGGOTH units while they are affected by the Light of the Bad Moon.'
+  },
+  {
+    pack: "Gloomspite Gitz",
+    faction: "Gloomspite Gitz",
+    subfaction: "All",
+    name: "Spiderfang Venom",
+    text: 'While SPIDERFANG units are affected by the Light of the Bad Moon, their Spider Venom ability causes mortal wounds on an unmodified roll of 5+ instead of a 6.'
+  },
+  {
+    pack: "Gloomspite Gitz",
+    faction: "All",
+    subfaction: "Da King’s Gitz",
+    name: "Lairs of the Loonking’s Ladz",
+    text: 'If you command a KING’S GITZ army, you can re-roll the dice roll when using the Bad Moon Loonshrine’s Moonclan Lairs ability.'
+  },
+  {
+    pack: "Gloomspite Gitz",
+    faction: "All",
+    subfaction: "Badsnatchers",
+    name: "Harbingers of the Everdank",
+    text: 'Each time a casting roll is made for a friendly BADSNATCHERS MOONCLAN WIZARD, if that WIZARD is wholly within 9" of any other friendly BADSNATCHERS MOONCLAN WIZARDS, you can re-roll 1 of the dice in that casting roll.'
+  },
+  {
+    pack: "Gloomspite Gitz",
+    faction: "All",
+    subfaction: "Jaws of Mork",
+    name: "Crushing Gobs",
+    text: 'Add 1 to the Attacks characteristic of Fang-filled Gobs, Massive Fang-filled Gobs and Huge Fang-filled Gobs used by friendly JAWS OF MORK SQUIG units if they made a charge move in the same turn.'
+  },
+  {
+    pack: "Gloomspite Gitz",
+    faction: "All",
+    subfaction: "Glogg’s Megamob",
+    name: "Monstrous Regeneration",
+    text: 'Each time a friendly GLOGG’S MEGAMOB TROGGOTH unit fights, after all of its attacks have been resolved, the effect of its Regeneration or Greater Regeneration ability is triggered.'
+  },
+]
+
 export const commandAbilities = [
   {
     pack: "Core Book",
