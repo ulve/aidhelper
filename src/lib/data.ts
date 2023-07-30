@@ -1,3 +1,78 @@
+export const commandAbilities = [
+  {
+    pack: "Core Book",
+    faction: "All",
+    subfaction: "All",
+    phase: "Any Hero Phase",
+    phaseOrder: 0,
+    name: "Rally",
+    text: 'You can use this command ability at the start of the hero phase. The unit that receives the command must be more than 3" from all enemy units. Roll 1 dice for each slain model from that unit. For each 6, you can return 1 slain model to that unit. You can only return models to that unit that have a combined Wounds characteristic of 10 or less. For example, if the unit that received the command has a Wounds characteristic of 2, you can return a maximum of 5 models to that unit.'
+  },
+  {
+    pack: "Core Book",
+    faction: "All",
+    subfaction: "All",
+    phase: "Your Movement Phase",
+    phaseOrder: 1,
+    name: "At the Double",
+    text: 'You can use this command ability after you declare that a friendly unit will run. That unit must receive the command. The run roll is not made for that unit. Instead, 6" is added to that unit’s Move characteristic in that phase. The unit is still considered to have run.'
+  },
+  {
+    pack: "Core Book",
+    faction: "All",
+    subfaction: "All",
+    phase: "Enemy Movement Phase",
+    phaseOrder: 1,
+    name: "Redeploy",
+    text: 'You can use this command ability in the enemy movement phase after an enemy unit finishes a normal move, run or retreat. The unit that receives the command must be within 9" of that enemy unit and more than 3" from all enemy units. You can make a D6" move with the unit that receives the command, but it must finish the move more than 3" from all enemy units and cannot shoot later in the turn.'
+  },
+  {
+    pack: "Core Book",
+    faction: "All",
+    subfaction: "All",
+    phase: "Your Charge Phase",
+    phaseOrder: 2,
+    name: "Forward to Victory",
+    text: 'You can use this command ability after you make a charge roll for a friendly unit. That unit must receive the command. You can re-roll the charge roll for that unit.'
+  },
+  {
+    pack: "Core Book",
+    faction: "All",
+    subfaction: "All",
+    phase: "Enemy Charge Phase",
+    phaseOrder: 2,
+    name: "Unleash Hell",
+    text: 'You can use this command ability after an enemy unit finishes a charge move. The unit that receives the command must be within 6" of that enemy unit and more than 3" from all other enemy units. Models in the unit that receives the command that are within 6" of the target unit can shoot in that phase, but when they do so, you must subtract 1 from hit rolls for their attacks and they can only target the unit that made the charge move.'
+  },
+  {
+    pack: "Core Book",
+    faction: "All",
+    subfaction: "All",
+    phase: "Attack Phase",
+    phaseOrder: 3,
+    name: "Any All-out Attack",
+    text: 'You can use this command ability when you pick a friendly unit to shoot in your shooting phase or fight in the combat phase. That unit must receive the command. Add 1 to hit rolls for attacks made by that unit until the end of that phase.'
+  },
+  {
+    pack: "Core Book",
+    faction: "All",
+    subfaction: "All",
+    phase: "Any Attack Phase",
+    phaseOrder: 3,
+    name: "All-out Defence",
+    text: 'You can use this command ability when a friendly unit is picked as the target of an attack in the shooting or combat phase. That unit must receive the command. Add 1 to save rolls for attacks that target that unit until the end of that phase.'
+  },
+  {
+    pack: "Core Book",
+    faction: "All",
+    subfaction: "All",
+    phase: "Any Battleshock Phase",
+    phaseOrder: 4,
+    name: "Inspiring Presence",
+    text: 'You can use this command ability at the start of the battleshock phase. The unit that receives the command does not have to take battleshock tests in that phase.'
+  },
+].sort((a, b) => a.phaseOrder - b.phaseOrder || a.phase.localeCompare(b.phase) || a.pack.localeCompare(b.pack) || a.subfaction.localeCompare(b.subfaction) || a.name.localeCompare(b.name))
+
 export const monstrousRampages = [
   {
     pack: "Gloomspite Gitz",

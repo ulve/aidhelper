@@ -1,6 +1,7 @@
 <script lang="ts">
 	import ArtifactsOfPower from '$lib/ArtifactsOfPower.svelte';
 	import BattleTactics from '$lib/BattleTactics.svelte';
+	import CommandAbilities from '$lib/CommandAbilities.svelte';
 	import CommandTraits from '$lib/CommandTraits.svelte';
 	import GrandStrategies from '$lib/GrandStrategies.svelte';
 	import HeroicActions from '$lib/HeroicActions.svelte';
@@ -13,6 +14,10 @@
 	<p>
 		<label><input type="checkbox" bind:checked={includePacks} />Show where rule came from</label>
 	</p>
+</div>
+
+<div class="avoidBreak">
+	<CommandAbilities {includePacks} />
 </div>
 
 <div class="avoidBreak">
