@@ -3,8 +3,12 @@
 	import BattleTactics from '$lib/BattleTactics.svelte';
 	import CommandTraits from '$lib/CommandTraits.svelte';
 	import GrandStrategies from '$lib/GrandStrategies.svelte';
+	import HeroicActions from '$lib/HeroicActions.svelte';
 </script>
 
+<div class="avoidBreak">
+	<HeroicActions />
+</div>
 <div class="avoidBreak">
 	<GrandStrategies />
 </div>

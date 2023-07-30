@@ -1,3 +1,34 @@
+export const heroicActions = [
+  {
+    pack: "Core Book",
+    faction: "All",
+    subfaction: "All",
+    name: "Heroic Leadership",
+    text: 'Pick 1 friendly h ero and roll a dice. Add 2 to the roll if your general has been slain. On a 4+, you receive 1 command point that can only be spent during that turn to allowthat hero to issue a command.'
+  },
+  {
+    pack: "Core Book",
+    faction: "All",
+    subfaction: "All",
+    name: "Heroic Willpower",
+    text: 'Pick 1 friendly hero that is not a Wizard. If it is the enemy hero phase, that hero can attempt to unbind 1 spellin that phase as if they were a Wizard. If it is your hero phase, that hero can attempt to dispel 1 endless spell in that phase as if they were a Wizard (you can still only attempt to unbind or dispel the same spell or endless spell once in the same phase).'
+  },
+  {
+    pack: "Core Book",
+    faction: "All",
+    subfaction: "All",
+    name: "Heroic Recovery",
+    text: 'Pick 1 friendly hero that is more than 3” from all enemy units and make a heroic recovery roll by rolling 2D6. If the roll is less than or equal to that hero’s Bravery characteristic, you can heal up to D3 wounds allocated to that hero.'
+  },
+  {
+    pack: "Core Book",
+    faction: "All",
+    subfaction: "All",
+    name: "Thier Finest Hour",
+    text: 'Pick 1 friendly h ero. Add 1 to wound rolls for attacks made by that hero until the end of that turn, and add 1 to save rolls for attacks that target that h ero until the end of that turn. You cannot carry out this heroic action with the same hero more than once in the same battle'
+  }
+]
+
 export const commandTraits = [
   {
     pack: "Core Book",
