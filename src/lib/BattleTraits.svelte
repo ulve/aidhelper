@@ -94,6 +94,9 @@
 					{#if includePacks}
 						<div class="pack">
 							<i>{trait.pack}</i>
+							{#if trait.subfaction !== 'All'}
+								<i>, {trait.subfaction}</i>
+							{/if}
 						</div>
 					{/if}
 				</div>
