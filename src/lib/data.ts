@@ -424,6 +424,13 @@ export const grandStrategies = [
     text: "When the battle ends, you complete this grand strategy if there are any Battleline units from your starting army on the battlefield."
   },
   {
+    pack: "Contest of Generals",
+    faction: "All",
+    name: "Sever the Head",
+    text: 'When the battle ends, you complete this grand strategy if there are no HEROES from your opponent’s starting army on the battlefield.'
+  },
+
+  {
     pack: "Gloomspite Gitz",
     faction: "Gloomspite Gitz",
     name: "A Scheme for Every Occasion",

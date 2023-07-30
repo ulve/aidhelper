@@ -24,9 +24,16 @@
 	</div>
 	<div class="twoColumnContentWrapper">
 		{#each heroicActions as action}
-			<div class:invisible={!selectedPacks.includes(action.pack)}>
-				<b>{action.name}:</b>{action.text}
-			</div>
+			{#if selectedPacks.includes(action.pack)}
+				<div class="item">
+					<div>
+						<b>{action.name}:</b>{action.text}
+					</div>
+					<div class="pack">
+						<i>{action.pack}</i>
+					</div>
+				</div>
+			{/if}
 		{/each}
 	</div>
 </div>

@@ -24,10 +24,17 @@
 	</div>
 	<div class="fourColumnContentWrapper">
 		{#each battleTactics as strategy}
-			<div class:invisible={!selectedPacks.includes(strategy.pack)}><div class="box" /></div>
-			<div class:invisible={!selectedPacks.includes(strategy.pack)}>
-				<b>{strategy.name}:</b>{strategy.text}
-			</div>
+			{#if selectedPacks.includes(strategy.pack)}
+				<div><div class="box" /></div>
+				<div class="item">
+					<div>
+						<b>{strategy.name}:</b>{strategy.text}
+					</div>
+					<div class="pack">
+						<i>{strategy.pack}</i>
+					</div>
+				</div>
+			{/if}
 		{/each}
 	</div>
 </div>

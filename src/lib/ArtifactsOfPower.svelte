@@ -84,14 +84,16 @@
 	</div>
 	<div class="twoColumnContentWrapper">
 		{#each artifactsOfPower as artifact}
-			<div
-				class:invisible={!(
-					selectedPacks.includes(artifact.pack) &&
-					(selectedSubfactions.includes(artifact.subfaction) || artifact.subfaction === 'All')
-				)}
-			>
-				<b>{artifact.name}:</b>{artifact.text}
-			</div>
+			{#if selectedPacks.includes(artifact.pack) && (selectedSubfactions.includes(artifact.subfaction) || artifact.subfaction === 'All')}
+				<div class="item">
+					<div>
+						<b>{artifact.name}:</b>{artifact.text}
+					</div>
+					<div class="pack">
+						<i>{artifact.pack}</i>
+					</div>
+				</div>
+			{/if}
 		{/each}
 	</div>
 </div>

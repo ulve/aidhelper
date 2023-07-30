@@ -84,14 +84,16 @@
 	</div>
 	<div class="twoColumnContentWrapper">
 		{#each commandTraits as trait}
-			<div
-				class:invisible={!(
-					selectedPacks.includes(trait.pack) &&
-					(selectedSubfactions.includes(trait.subfaction) || trait.subfaction === 'All')
-				)}
-			>
-				<b>{trait.name}:</b>{trait.text}
-			</div>
+			{#if selectedPacks.includes(trait.pack) && (selectedSubfactions.includes(trait.subfaction) || trait.subfaction === 'All')}
+				<div class="item">
+					<div>
+						<b>{trait.name}:</b>{trait.text}
+					</div>
+					<div class="pack">
+						<i>{trait.pack}</i>
+					</div>
+				</div>
+			{/if}
 		{/each}
 	</div>
 </div>

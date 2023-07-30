@@ -24,9 +24,16 @@
 	</div>
 	<div class="twoColumnContentWrapper">
 		{#each monstrousRampages as rampage}
-			<div class:invisible={!selectedPacks.includes(rampage.pack)}>
-				<b>{rampage.name}:</b>{rampage.text}
-			</div>
+			{#if selectedPacks.includes(rampage.pack)}
+				<div class="item">
+					<div>
+						<b>{rampage.name}:</b>{rampage.text}
+					</div>
+					<div class="pack">
+						<i>{rampage.pack}</i>
+					</div>
+				</div>
+			{/if}
 		{/each}
 	</div>
 </div>
