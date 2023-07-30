@@ -55,7 +55,14 @@ export const battleTraits = [
     name: "Monstrous Regeneration",
     text: 'Each time a friendly GLOGG’S MEGAMOB TROGGOTH unit fights, after all of its attacks have been resolved, the effect of its Regeneration or Greater Regeneration ability is triggered.'
   },
-]
+  {
+    pack: "Gloomspite Gitz",
+    faction: "All",
+    subfaction: "Grimscuttle",
+    name: "Through the Cracks they Creep",
+    text: 'During deployment, if any friendly GRIMSCUTTLE SKITTERSTRAND ARACHNAROKS have been set up in ambush as reserve units using the Ambush From Beyond ability, instead of setting up another friendly GRIMSCUTTLE SPIDERFANG unit, you can place that unit to one side and say that it will join a friendly GRIMSCUTTLE SKITTERSTRAND ARACHNAROK in ambush as a reserve unit. Up to 2 units can join each friendly GRIMSCUTTLE SKITTERSTRAND ARACHNAROK as a reserve unit. When a friendly GRIMSCUTTLE SKITTERSTRAND ARACHNAROK is set up on the battlefield for the first time, set up all units that joined it wholly within 12" of it and more than 9" from all enemy units.'
+  },
+].sort((a, b) => a.pack.localeCompare(b.pack) || a.subfaction.localeCompare(b.subfaction) || a.name.localeCompare(b.name))
 
 export const commandAbilities = [
   {
@@ -594,109 +601,127 @@ export const battleTactics = [
   {
     pack: "Stormcast Eternals",
     faction: "Stormcast Eternals",
+    subfaction: "All",
     name: "Pioneers of the Realms",
     text: 'You complete this tactic if all of the objectives wholly within your opponent’s territory are contested by friendly CITIES OF SIGMAR units at the end of this turn.'
   },
   {
     pack: "Stormcast Eternals",
     faction: "Stormcast Eternals",
+    subfaction: "All",
     name: "No Challenge Too Great",
     text: 'You complete this tactic if an enemy HERO is slain by wounds caused by an attack made with a melee weapon by a friendly REDEEMER unit during this turn.'
   },
   {
     pack: "Stormcast Eternals",
     faction: "Stormcast Eternals",
+    subfaction: "All",
     name: "Hammerstrike Assault",
     text: 'Pick 1 HERO in your opponent’s starting army that is on the battlefield, that has a Wounds characteristic of 10 or more and that has 0 wounds allocated to it. You complete this tactic if that HERO is slain during this turn.'
   },
   {
     pack: "Stormcast Eternals",
     faction: "Stormcast Eternals",
+    subfaction: "All",
     name: "Lightning-shattered Morale",
     text: 'Pick 1 unit in your opponent’s starting army that is on the battlefield and that has a Bravery characteristic of 10 or more. You complete this tactic if any models in that unit flee during this turn.'
   },
   {
     pack: "Stormcast Eternals",
     faction: "Stormcast Eternals",
+    subfaction: "All",
     name: "Draconith Destruction",
     text: 'Pick 1 unit in your opponent’s starting army that is on the battlefield and that has 10 or more models. You complete this tactic if that unit is destroyed by wounds caused by attacks made by friendly DRACONITH, STARDRAKE or DRACOTH units during this turn.'
   },
   {
     pack: "Stormcast Eternals",
     faction: "Stormcast Eternals",
+    subfaction: "All",
     name: "A Matter of Honour",
     text: 'Pick 1 MONSTER in your opponent’s starting army that is on the battlefield. You complete this tactic if that unit is destroyed by wounds caused by attacks made by friendly DRACONITH or STARDRAKE units during this turn.'
   },
   {
     pack: "Contest of Generals",
     faction: "All",
+    subfaction: "All",
     name: "Break their Spirit",
     text: "Pick 1 enemy unit wholly within your opponent’s territory. You complete this tactic if that unit is destroyed during this turn."
   },
   {
     pack: "Contest of Generals",
     faction: "All",
+    subfaction: "All",
     name: "Broken Ranks",
     text: "Pick 1 unit from your opponent’s starting army that is on the battlefield. You complete this tactic if that unit is destroyed during this turn."
   },
   {
     pack: "Contest of Generals",
     faction: "All",
+    subfaction: "All",
     name: "Conquer",
     text: "Pick 1 objective marker on the battlefield that your opponent controls. You complete this tactic if you control that objective marker at the end of this turn."
   },
   {
     pack: "Contest of Generals",
     faction: "All",
+    subfaction: "All",
     name: "Repel",
     text: "Pick 1 enemy unit wholly or partially within your territory. You complete this tactic if that unit is destroyed during this turn."
   },
   {
     pack: "Contest of Generals",
     faction: "All",
+    subfaction: "All",
     name: "Seize the Centre",
     text: "You complete this tactic if there are more friendly than enemy models within 6\" of the centre of the battlefield at the end of this turn."
   },
   {
     pack: "Contest of Generals",
     faction: "All",
+    subfaction: "All",
     name: "Slay the Warlord",
     text: "You complete this tactic if the model chosen to be your opponent’s general is slain during this turn"
   },
   {
     pack: "Gloomspite Gitz",
     faction: "Gloomspite Gitz",
+    subfaction: "All",
     name: "Follow da Moon",
     text: "You cannot pick this tactic in the first battle round. You complete this tactic if at the end of this turn every friendly GLOOMSPITE GITZ unit on the battlefield is affected by the Light of the Bad Moon and you control more objectives than your opponent."
   },
   {
     pack: "Gloomspite Gitz",
     faction: "Gloomspite Gitz",
+    subfaction: "All",
     name: "Glory Grabbers",
     text: "Pick 1 objective controlled by your opponent. You complete this tactic if at the end of this turn you control that objective and a friendly GLOOMSPITE GITZ unit that was added to your army as a replacement unit using the Bad Moon Loonshrine."
   },
   {
     pack: "Gloomspite Gitz",
     faction: "Gloomspite Gitz",
+    subfaction: "All",
     name: "Venomous Assault",
     text: "You complete this tactic if at least 8 mortal wounds were caused by the Spider Venom ability of friendly SPIDERFANG units during this turn and not negated."
   },
   {
     pack: "Gloomspite Gitz",
     faction: "Gloomspite Gitz",
+    subfaction: "All",
     name: "Stab ’Em in the Dark",
     text: "Pick 1 enemy unit on the battlefield. You complete this tactic if that unit was destroyed by an attack made by a friendly GLOOMSPITE GITZ unit during this turn while it was not affected by the Light of the Bad Moon."
   },
   {
     pack: "Gloomspite Gitz",
     faction: "Gloomspite Gitz",
+    subfaction: "All",
     name: "Moonlight Raid",
     text: "Pick 1 objective controlled by your opponent. You complete this tactic if at the end of this turn you control that objective and every friendly GLOOMSPITE GITZ unit that is contesting it is affected by the Light of the Bad Moon."
   },
   {
     pack: "Gloomspite Gitz",
     faction: "Gloomspite Gitz",
+    subfaction: "All",
     name: "You Ain’t So Big",
     text: "Pick 1 enemy MONSTER on the battlefield. You complete this tactic if that MONSTER was slain by an attack made by a friendly GLOOMSPITE GITZ TROGGOTH unit during this turn."
   }
-].sort((a, b) => a.pack.localeCompare(b.pack)) || a.subfaction.localeCompare(b.subfaction) || a.name.localeCompare(b.name)
+].sort((a, b) => a.pack.localeCompare(b.pack) || a.subfaction.localeCompare(b.subfaction) || a.name.localeCompare(b.name))
