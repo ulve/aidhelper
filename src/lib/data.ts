@@ -320,12 +320,7 @@ export const grandStrategies = [
     name: "Sacred Charge",
     text: 'When the battle ends, you complete this grand strategy if there are 2 or more friendly CITIES OF SIGMAR units on the battlefield.'
   },
-  {
-    pack: "Contest of Generals",
-    faction: "All",
-    name: "Sacred Charge",
-    text: 'When the battle ends, you complete this grand strategy if there are 2 or more friendly CITIES OF SIGMAR units on the battlefield.'
-  },
+
   {
     pack: "Contest of Generals",
     faction: "All",
