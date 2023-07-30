@@ -1,4 +1,5 @@
 <script lang="ts">
+	export let includePacks: boolean = true;
 	import { heroicActions } from '$lib/data';
 
 	const distinctPacks = heroicActions
@@ -29,9 +30,11 @@
 					<div>
 						<b>{action.name}:</b>{action.text}
 					</div>
-					<div class="pack">
-						<i>{action.pack}</i>
-					</div>
+					{#if includePacks}
+						<div class="pack">
+							<i>{action.pack}</i>
+						</div>
+					{/if}
 				</div>
 			{/if}
 		{/each}

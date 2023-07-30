@@ -15,25 +15,12 @@ h2 {
     margin: 2px;
 }
 
-@media print {
-    .noPrint {
-        display: none;
-    }
-
-    h1 {
-        font-size: small;
-    }
-
-    .contentWrapper {
-        font-size: 8pt;
-    }
-}
-
 .box {
     border: 2px solid black;
     width: 15px;
     height: 15px;
     margin: 5px;
+    margin-top: 25px;
 }
 
 .fourColumnHeaderWrapper {
@@ -79,4 +66,33 @@ h2 {
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+}
+
+
+@media print {
+    .noPrint {
+        display: none;
+    }
+
+    h1 {
+        font-size: small;
+    }
+
+    .fourColumnContentWrapper {
+        font-size: 8pt;
+    }
+
+    .twoColumnContentWrapper {
+        font-size: 8pt;
+    }
+
+    .fourColumnContentWrapper {
+        display: grid;
+        grid-template-columns: auto 1fr auto 1fr;
+        padding: 5px;
+        /* grid-auto-rows: 1fr; */
+        row-gap: 10px;
+        column-gap: 5px;
+    }
+
 }

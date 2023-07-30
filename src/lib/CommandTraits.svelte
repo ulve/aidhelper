@@ -1,4 +1,5 @@
 <script lang="ts">
+	export let includePacks: boolean = true;
 	import { commandTraits } from '$lib/data';
 
 	const distinctPacks = commandTraits
@@ -89,9 +90,12 @@
 					<div>
 						<b>{trait.name}:</b>{trait.text}
 					</div>
-					<div class="pack">
-						<i>{trait.pack}</i>
-					</div>
+
+					{#if includePacks}
+						<div class="pack">
+							<i>{trait.pack}</i>
+						</div>
+					{/if}
 				</div>
 			{/if}
 		{/each}

@@ -5,23 +5,31 @@
 	import GrandStrategies from '$lib/GrandStrategies.svelte';
 	import HeroicActions from '$lib/HeroicActions.svelte';
 	import MonstrousRapages from '$lib/MonstrousRapages.svelte';
+	let includePacks: boolean = true;
 </script>
 
+<div class="noPrint">
+	<h2>Settings:</h2>
+	<p>
+		<label><input type="checkbox" bind:checked={includePacks} />Show where rule came from</label>
+	</p>
+</div>
+
 <div class="avoidBreak">
-	<MonstrousRapages />
+	<MonstrousRapages {includePacks} />
 </div>
 <div class="avoidBreak">
-	<HeroicActions />
+	<HeroicActions {includePacks} />
 </div>
 <div class="avoidBreak">
-	<GrandStrategies />
+	<GrandStrategies {includePacks} />
 </div>
 <div class="avoidBreak">
-	<BattleTactics />
+	<BattleTactics {includePacks} />
 </div>
 <div class="avoidBreak">
-	<CommandTraits />
+	<CommandTraits {includePacks} />
 </div>
 <div class="avoidBreak">
-	<ArtifactsOfPower />
+	<ArtifactsOfPower {includePacks} />
 </div>

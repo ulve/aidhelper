@@ -1,4 +1,5 @@
 <script lang="ts">
+	export let includePacks: boolean = true;
 	import { grandStrategies } from '$lib/data';
 
 	const distinctPacks = grandStrategies
@@ -32,9 +33,11 @@
 					<div>
 						<b>{strategy.name}:</b>{strategy.text}
 					</div>
-					<div class="pack">
-						<i>{strategy.pack}</i>
-					</div>
+					{#if includePacks}
+						<div class="pack">
+							<i>{strategy.pack}</i>
+						</div>
+					{/if}
 				</div>
 			{/if}
 		{/each}

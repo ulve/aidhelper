@@ -1,4 +1,5 @@
 <script lang="ts">
+	export let includePacks: boolean = true;
 	import { artifactsOfPower } from '$lib/data';
 
 	const distinctPacks = artifactsOfPower
@@ -89,9 +90,11 @@
 					<div>
 						<b>{artifact.name}:</b>{artifact.text}
 					</div>
-					<div class="pack">
-						<i>{artifact.pack}</i>
-					</div>
+					{#if includePacks}
+						<div class="pack">
+							<i>{artifact.pack}</i>
+						</div>
+					{/if}
 				</div>
 			{/if}
 		{/each}

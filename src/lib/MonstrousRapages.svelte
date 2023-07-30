@@ -1,4 +1,6 @@
 <script lang="ts">
+	export let includePacks: boolean = true;
+
 	import { monstrousRampages } from '$lib/data';
 
 	const distinctPacks = monstrousRampages
@@ -29,9 +31,11 @@
 					<div>
 						<b>{rampage.name}:</b>{rampage.text}
 					</div>
-					<div class="pack">
-						<i>{rampage.pack}</i>
-					</div>
+					{#if includePacks}
+						<div class="pack">
+							<i>{rampage.pack}</i>
+						</div>
+					{/if}
 				</div>
 			{/if}
 		{/each}
