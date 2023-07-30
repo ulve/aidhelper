@@ -60,6 +60,13 @@
 		}
 	}
 
+	.box {
+		border: 2px solid black;
+		width: 15px;
+		height: 15px;
+		margin: 5px;
+	}
+
 	.headerWrapper {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
@@ -72,7 +79,7 @@
 
 	.contentWrapper {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: auto 1fr auto 1fr;
 		padding: 20px;
 		/* grid-auto-rows: 1fr; */
 		gap: 10px;
